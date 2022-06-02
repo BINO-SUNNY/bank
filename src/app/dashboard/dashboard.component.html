@@ -1,0 +1,90 @@
+<nav class="navbar navbar-light bg-dark " >
+    <a class="navbar-brand  " href="#" style="color:rgb(85, 98, 237);"><b>&#169; HAFC Bank Pvt.Ltd </b></a>
+    <span class="quote text-light">Giving you freedom...</span>
+  </nav>
+  <h1>welcome user</h1>
+  
+  
+  <div class="container col-md-12 mt-0">
+      <div class="d-flex justify-content-center h-100">
+          <div class="card">
+              <div class="card-header">
+                  <h3 class="text-center">Deposite form</h3>
+                  
+              </div>
+              <div class="card-body">
+                  <form (ngSbmit)="deposite">
+                    
+                      <div class="input-group form-group">
+                          <div class="input-group-prepend">
+                              <span class="input-group-text"><i class="fas fa-user"></i></span>
+                          </div>
+                          <input type="text" class="form-control" name="acno"[(ngModel)]="acno" placeholder="account number" id="login_accno" required>
+                          
+                      </div>
+                      <div class="input-group form-group">
+                          <div class="input-group-prepend">
+                              <span class="input-group-text"><i class="fas fa-key"></i></span>
+                          </div>
+                          <input type="password" class="form-control" name="pass" [(ngModel)]="pass" placeholder="password" id="login_password" required>
+                      </div>
+                      <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                        </div>
+                        <input type="text" class="form-control" name=" amount"[(ngModel)]=" amount" placeholder="amount" id="login_user" required>
+                        
+                    </div>
+                      
+                      <div class="form-group">
+                          <input type="submit" value="Deposite"  class="btn float-right login_btn " style="width:50%" >
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+  <div class="container col-md-12 mt-0">
+    <div class="d-flex justify-content-center h-100">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="text-center">withdrow form</h3>
+                
+            </div>
+            <div class="card-body">
+                <form>
+                  
+                    <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                        </div>
+                        <input type="text" class="form-control" name="acno1"[(ngModel)]="acno1" placeholder="account number" id="login_accno" required>
+                        
+                    </div>
+                    <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                        </div>
+                        <input type="password" class="form-control" name="pass1" [(ngModel)]="pass1" placeholder="password" id="login_password" required>
+                    </div>
+                    <div class="input-group form-group">
+                      <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="fas fa-user"></i></span>
+                      </div>
+                      <input type="text" class="form-control" name=" amount1"[(ngModel)]=" amount1" placeholder="amount" id="login_user" required>
+                      
+                  </div>
+                    
+                    <div class="form-group">
+                        <input type="submit" value="withdrow" (click)="withdrow()" class="btn float-right login_btn " style="width:50%" >
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
